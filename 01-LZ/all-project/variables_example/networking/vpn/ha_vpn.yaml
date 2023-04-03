@@ -1,0 +1,97 @@
+---
+################################## Module HA VPN #################################
+# g-havpn-[XXX]:
+#   project                                 : "g-prj-[COMPANY]-[XXX]"
+#   region                                  : "europe-west1"
+#   network                                 : "g-vpc-[XXX]"
+#   name                                    : "g-havpn-[XXX]"
+#   router_name                             : "g-cr-[XXX]"
+#   router_asn                              : 16550
+#   router_advertise_config                 :
+#     groups                                : []
+#     ip_ranges                             :
+#       "10.252.0.0/16"                     : "range1"
+#       "10.253.0.0/16"                     : "range2"
+#       "35.199.192.0/19"                   : "Cloud DNS to DNS Forwarders DMZ On-Prem"
+#     mode                                  : "CUSTOM"
+#   peer_external_gateway                   :
+#     redundancy_type                       : "FOUR_IPS_REDUNDANCY"
+#     interfaces                            :
+#       - id                                : 0
+#         ip_address                        : "[IP]"
+#       - id                                : 1
+#         ip_address                        : "[IP]" 
+#       - id                                : 2
+#         ip_address                        : "[IP]" 
+#       - id                                : 3
+#         ip_address                        : "[REMOTE-IP]" 
+#   tunnels                                 :
+#     cn-tun1                               :
+#       name_peer                           : "g-ipsec-peer-[XXX]-1"
+#       name_tunel                          : "g-ipsec-peer-[XXX]-tun1"
+#       name_bgp                            : "g-ipsec-peer-[XXX]-tun1-bgp"
+#       bgp_peer                            :
+#         address                           : "169.254.0.2"
+#         asn                               : 65001
+#       bgp_peer_options                    :
+#         advertise_groups                  : null
+#         advertise_ip_ranges               : null
+#         advertise_mode                    : null
+#         route_priority                    : 2000
+#       bgp_session_range                   : "169.254.0.1/30"
+#       ike_version                         : 2
+#       vpn_gateway_interface               : 0
+#       peer_external_gateway_interface     : 0
+#       shared_secret                       : "[XXX]"        
+#     cn-tun2                               :
+#       name_peer                           : "g-ipsec-[XXX]-2"
+#       name_tunel                          : "g-ipsec-[XXX]-tun2"
+#       name_bgp                            : "g-ipsec-[XXX]-tun2-bgp"
+#       bgp_peer                            :
+#         address                           : "169.254.0.6"
+#         asn                               : 65001
+#       bgp_peer_options                    :
+#         advertise_groups                  : null
+#         advertise_ip_ranges               : null
+#         advertise_mode                    : null
+#         route_priority                    : 3000
+#       bgp_session_range                   : "169.254.0.5/30"
+#       ike_version                         : 2
+#       vpn_gateway_interface               : 1
+#       peer_external_gateway_interface     : 1
+#       shared_secret                       : "[XXX]"        
+#     lc-tun1                               :
+#       name_peer                           : "g-ipsec-[XXX]"
+#       name_tunel                          : "g-ipsec-peer-[XXX]-tun1"
+#       name_bgp                            : "g-ipsec-peer-[XXX]-tun1-bgp"
+#       bgp_peer                            :
+#         address                           : "169.254.0.10"
+#         asn                               : 65002
+#       bgp_peer_options                    :
+#         advertise_groups                  : null
+#         advertise_ip_ranges               : null
+#         advertise_mode                    : null
+#         route_priority                    : 2000
+#       bgp_session_range                   : "169.254.0.9/30"
+#       ike_version                         : 2
+#       vpn_gateway_interface               : 0
+#       peer_external_gateway_interface     : 2
+#       shared_secret                       : "[XXX]" 
+#     lc-tun2                               :
+#       name_peer                           : "g-ipsec-peer-[XXX]"
+#       name_tunel                          : "g-ipsec-peer-[XXX]-tun2"
+#       name_bgp                            : "g-ipsec-peer-[XXX]-tun2-bgp"
+#       bgp_peer                            :
+#         address                           : "169.254.0.14"
+#         asn                               : 65002
+#       bgp_peer_options                    :
+#         advertise_groups                  : null
+#         advertise_ip_ranges               : null
+#         advertise_mode                    : null
+#         route_priority                    : 3000
+#       bgp_session_range                   : "169.254.0.13/30"
+#       ike_version                         : 2
+#       vpn_gateway_interface               : 1
+#       peer_external_gateway_interface     : 3
+#       shared_secret                       : "[XXX]" 
+

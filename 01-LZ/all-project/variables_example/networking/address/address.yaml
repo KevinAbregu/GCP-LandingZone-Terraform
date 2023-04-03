@@ -1,0 +1,31 @@
+---
+################################### Module Address #################################
+# g-ip-[XXX] :
+#     name_address                                : "g-ip-[XXX]"
+#     project                                     : "g-prj-[COMPANY]-[XXX]"
+#     region                                      : "europe-west1"
+#     name_subnetwork                             : "g-snet-[XXX]"
+#     address_type                                : "INTERNAL"
+#     ip_address                                  : "[IP]"
+#     purpose                                     : "GCE_ENDPOINT"
+#     description                                 : ""
+
+
+# g-ip-[XXX] :
+#   name_address                              : "g-ip-[XXX]"
+#   project                                   : "g-prj-[COMPANY]-[XXX]"
+#   project_network                           : "g-prj-[COMPANY]-[XXX]"
+#   region                                    : "europe-west1"
+#   name_subnetwork                           : "g-snet-[XXX]"
+#   address_type                              : "INTERNAL"
+#   ip_address                                : "[IP]"
+#   purpose                                   : "SHARED_LOADBALANCER_VIP"
+
+# g-ip-[XXX]      :
+#   name_address                              : "g-ip-[XXX]"
+#   project                                   : "g-prj-[COMPANY]-[XXX]"
+#   region                                    : "europe-west1"
+#   address_type                              : "EXTERNAL"
+#   description                               : "IP pública de pruebas para VPN on Pemise"
+
+

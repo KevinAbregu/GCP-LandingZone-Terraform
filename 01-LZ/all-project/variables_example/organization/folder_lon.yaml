@@ -1,0 +1,17 @@
+#####################################     Module Folder        #####################################
+
+---
+
+# ################################### Module Folder #################################
+# folder_leveluno : 
+#   - "g-fldr-cs-lon"
+# folder_leveldos : 
+#   g-fldr-cs-lon : 
+#     - "g-fldr-[XXX]"
+#     - "g-fldr-[XXX]"
+#     - "g-fldr-[XXX]"
+  
+
+# # use one (if parent_id is organization) first else second
+# parent_id : "folders/XXX"
+# # parent_id : "folders/XXX"

@@ -1,0 +1,14 @@
+---
+################################### Module FIREWALL #################################
+g-vpc-[XXX]:
+  project_firewall              : "g-prj-[COMPANY]-[XXX]"
+  network_name_firewall         : "g-vpc-[XXX]"
+  custom_rules                  :
+    - name                      : "[XXX]"
+      priority                  : 5000
+      direction                 : "INGRESS"
+      ranges                    :
+        - "0.0.0.0/0"
+      allow                     :
+        - protocol              : "all"
+          ports                 : []

@@ -1,0 +1,9 @@
+#####################################     Module Project Permissions       #####################################
+---
+# g-prj-[XXX]    :
+#   shared_vpc            : g-prj-[XXX] # Host Project
+#   project_id            : g-prj-[XXX] # Service Project
+#   subnetworks    :
+#     - "g-snet-[XXX]"
+
+

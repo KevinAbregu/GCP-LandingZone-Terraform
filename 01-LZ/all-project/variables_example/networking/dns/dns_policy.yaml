@@ -1,0 +1,9 @@
+---
+################################### Module DNS Policy #################################
+# g-dns-[XXX]   :
+#   name                             : "g-dns-[XXX]"
+#   project                          : "g-prj-[COMPANY]-[XXX]"
+#   enable_inbound_forwarding        : true
+#   enable_logging                   : false
+#   name_network                     : "g-vpc-[XXX]"
+#   network_url                      : "https://www.googleapis.com/compute/v1/projects/g-prj-[COMPANY]-[XXX]/global/networks/g-vpc-[XXX]"

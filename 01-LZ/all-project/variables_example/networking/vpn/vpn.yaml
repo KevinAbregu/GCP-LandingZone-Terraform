@@ -1,0 +1,19 @@
+---
+################################## Module VPN #################################
+# g-vpn-[XXX]                          :
+#   project                             : "g-prj-[COMPANY]-[XXX]"
+#   name                                : "g-vpn-[XXX]"
+#   region                              : "europe-west1"
+#   network                             : "g-vpc-[XXX]"
+#   name_address                        : "g-ip-[XXX]"
+#   tunnel                              :
+#     tunnel_1                          :
+#       name                            : "g-tn-[XXX]"
+#       shared_secret                   : "[XXX]"
+#       peer_ips                        : "[REMOTE-IP]"
+#       local_traffic_selector          :
+#         - "10.253.0.0/24"
+#       remote_subnet                   :
+#         - "10.10.1.0/24"
+#         - "10.10.2.0/24"
+

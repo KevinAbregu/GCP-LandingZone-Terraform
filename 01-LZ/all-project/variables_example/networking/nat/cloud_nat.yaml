@@ -1,0 +1,24 @@
+---
+################################### Module NAT #################################
+# g-nat-[XXX]                  :
+#   project                             : "g-prj-[COMPANY]-[XXX]"
+#   region                              : "europe-west1"
+#   name                                : "g-nat-[XXX]"
+#   create_router                       : true
+#   network                             : "g-vpc-[XXX]"
+#   router                              : "g-cr-[XXX]"
+#   router_asn                          : "64512"
+#   min_ports_per_vm                    : "30000"
+#   # SELF LINK NAT IP
+#   nat_ips                             :
+#     - "g-ip-[XXX]"
+#   source_subnetwork_ip_ranges_to_nat  : "LIST_OF_SUBNETWORKS"
+#   subnetworks                         :
+#     - name                            : "g-snet-[XXX]"
+#       source_ip_ranges_to_nat         :
+#         - "ALL_IP_RANGES"
+#       secondary_ip_range_names        : []
+#     - name                            : "g-snet-[XXX]"
+#       source_ip_ranges_to_nat         :
+#         - "ALL_IP_RANGES"
+#       secondary_ip_range_names        : []

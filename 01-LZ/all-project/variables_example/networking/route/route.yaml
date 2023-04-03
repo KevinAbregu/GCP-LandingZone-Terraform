@@ -1,0 +1,20 @@
+---
+################################### Module Route #################################
+# g-rt-[XXX]               :
+#   name                                      : "g-rt-[XXX]"
+#   project                                   : "g-prj-[COMPANY]-[XXX]"
+#   network                                   : "g-vpc-[XXX]"
+#   dest_range                                : "0.0.0.0/0"
+#   priority                                  : 1000
+#   type                                      : "gateway"
+#   value                                     : "default-internet-gateway"
+
+# g-rt-[XXX]               :
+#   name                                      : "g-rt-[XXX]"
+#   project                                   : "g-prj-[COMPANY]-[XXX]"
+#   region                                    : "europe-west1"
+#   network                                   : "g-vpc-[XXX]"
+#   dest_range                                : "0.0.0.0/0"
+#   priority                                  : 1000
+#   type                                      : "ilb"
+#   value                                     : "[XXX]"

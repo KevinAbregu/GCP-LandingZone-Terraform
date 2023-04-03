@@ -1,0 +1,27 @@
+---
+################################### Module Subnet #################################
+# g-vpc-[XXX]          :
+#   project_vpc                                   : "g-prj-[COMPANY]-[XXX]"
+#   network_name_vpc                              : "g-vpc-[XXX]"
+#   subnet_info                                   :
+#     - subnet_name                               : "g-snet-[XXX]"
+#       subnet_ip                                 : "[CIDR]"
+#       subnet_region                             : "europe-west1"
+#       subnet_private_access                     : "true"
+#     - subnet_name                               : "g-snet-[XXX]"
+#       subnet_ip                                 : "[CIDR]"
+#       subnet_region                             : "europe-west1"
+#       subnet_private_access                     : "true"
+#     - subnet_name                               : "g-snet-[XXX]-proxy-only"
+#       subnet_ip                                 : "[CIDR]"
+#       subnet_region                             : "europe-west1"
+#       purpose                                   : "INTERNAL_HTTPS_LOAD_BALANCER"
+#       role                                      : "ACTIVE"
+    # secondary_ranges                              : 
+    #   g-snet-[XXX]-[XXX]              : 
+    #   - range_name                                : "g-snet-[XXX]-alias"
+    #     ip_cidr_range                             : "[CIDR]" 
+    #   g-snet-[XXX]-[XXX]               : 
+    #   - range_name                                : "g-snet-[XXX]-alias"
+    #     ip_cidr_range                             : "[CIDR]" 
+

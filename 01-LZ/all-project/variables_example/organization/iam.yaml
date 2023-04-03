@@ -1,0 +1,42 @@
+  # Name  service account serviceAccount:<nombre_ac>@<nombre_project>.iam.gserviceaccount.com
+  # CS
+# iam1 :
+#   type  : "folder"
+#   folder : "g-fldr-cs"
+#   role   : "roles/resourcemanager.folderAdmin"
+#   members : 
+#   - "serviceAccount:[XXX]" # CICD SA
+# iam2 :
+#   type  : "folder"
+#   folder : "g-fldr-cs"
+#   role   : "roles/resourcemanager.projectCreator"
+#   members : 
+#   - "serviceAccount:[XXX]"
+# iam3 :
+#   type  : "folder"
+#   folder : "g-fldr-cs-net"
+#   role   : "roles/resourcemanager.projectIamAdmin"
+#   members :
+#   - "serviceAccount:[XXX]"
+# iam4 : 
+#   type  : "folder"
+#   folder : "g-fldr-cs-net"
+#   role   : "roles/compute.xpnAdmin"
+#   members : 
+#   - "serviceAccount:[XXX]"
+
+# iam6 : 
+#   type  : "project"
+#   project : "g-prj-[COMPANY]-cicd"
+#   role   : "roles/storage.admin"
+#   members : 
+#   - "serviceAccount:[XXX]"
+
+# iam7 : 
+#   type  : "project"
+#   project : "g-prj-[COMPANY]-cicd"
+#   role   : "roles/iam.serviceAccountAdmin"
+#   members : 
+#   - "serviceAccount:[XXX]"
+
+

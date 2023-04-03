@@ -1,0 +1,23 @@
+---
+################################## Module Disks #################################
+
+################################## BOOT DISK #################################
+
+
+# g-disk-vm-[COMPANY]-[XXX]           :
+#   project                                 : "g-prj-[COMPANY]-[XXX]"
+#   name                                    : "g-disk-vm-[COMPANY]-[XXX]"
+#   size                                    : "20"
+#   zone                                    : "europe-west1-b"
+#   type                                    : "pd-balanced"
+#   image                                   : "projects/cis-public/global/images/cis-red-hat-enterprise-linux-9-level-2-v1-0-0-1"
+
+
+################################## ATTACH DISK #################################
+
+# g-disk-vm-[COMPANY]-[XXX]          :
+#   project                                 : "g-prj-[COMPANY]-[XXX]"
+#   name                                    : "g-disk-vm-[COMPANY]-[XXX]"
+#   size                                    : "20"
+#   zone                                    : "europe-west1-b"
+#   type                                    : "pd-balanced"

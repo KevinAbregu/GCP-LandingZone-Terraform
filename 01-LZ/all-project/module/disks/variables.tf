@@ -1,0 +1,3 @@
+variable "disks" {
+  type = any
+}

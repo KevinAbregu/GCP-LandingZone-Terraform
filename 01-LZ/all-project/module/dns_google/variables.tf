@@ -1,0 +1,4 @@
+variable "dns"{
+    type = any
+}
+

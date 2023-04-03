@@ -1,0 +1,22 @@
+---
+# g-bkt-[XXX]:
+#   bucket_name       : "g-bkt-[XXX]"
+#   bucket_project    : "g-prj-[COMPANY]-[XXX]"
+#   bucket_location   : "europe-west1"
+#   bucket_versioning : true
+#   bucket_iam_members :
+#   - role : "roles/storage.legacyBucketOwner"
+#     member : "serviceAccount:[XXX]"
+  # - role   : "roles/storage.legacyObjectOwner"
+  #   member : "serviceAccount:g-sa-webfg-cs-cicd-lon@g-prj-webfg-cicd.iam.gserviceaccount.com"
+  # bucket_life : 
+  # - action : 
+  #     storage_class : "NEARLINE"
+  #     type          : "SetStorageClass"
+  #   condition :
+  #     age                        : 0
+  #     days_since_custom_time     : 0
+  #     days_since_noncurrent_time : 0
+  #     matches_storage_class      : []
+  #     num_newer_versions         : 1000
+  #     with_state                 : "ANY"

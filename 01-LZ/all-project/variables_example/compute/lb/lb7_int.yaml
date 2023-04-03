@@ -1,0 +1,35 @@
+---
+# g-lb7i-[XXX] :
+#   project : "g-prj-[COMPANY]-[XXX]"
+#   region  : "europe-west1"
+
+#   url_map_name : "g-lb7i-[XXX]"
+#   ip_protocol  : "TCP"
+#   #### Front #######
+#   # type_protocol ("https" or "http")
+#   http :
+#     proxy_name           : "g-proxy-[XXX]"
+#     forwarding_rule_name : "g-fwlb7-[XXX]"
+#     port_range           : "80"
+#   project_network : "g-prj-[COMPANY]-[XXX]"
+#   network         : "g-vpc-[XXX]"
+#   subnetwork      : "g-snet-[XXX]"
+#   host_rule : 
+#     - name : "g-bks-[XXX]"
+#       host : 
+#       - "prueba.ip.net"
+#   balancing_mode      : "RATE"
+#   max_rate            : 30.0
+#   capacity_scaler     : 1.0
+#   locality_lb_policy  : "ROUND_ROBIN"
+#   backend_timeout_sec : 300
+#   default_backend     : "g-bks-[XXX]"
+#   backends :
+#     - name              : "g-bks-[XXX]"
+#       port_name         : "http-80"
+#       umig              : "g-umig-[XXX]"
+#       protocol          : "HTTP"
+#       health_check_name : "g-hc-[XXX]"
+#       timeout_sec       : 300
+#   health_check_name : "g-hc-[XXX]"
+#   address_name      : "g-add-[XXX]"

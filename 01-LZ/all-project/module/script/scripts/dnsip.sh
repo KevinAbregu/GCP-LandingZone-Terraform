@@ -1,0 +1,1 @@
+gcloud alpha compute instance-groups managed update $1 --stateful-internal-ip  interface-name=nic0,auto-delete=$2  --region=$3

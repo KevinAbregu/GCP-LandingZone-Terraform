@@ -1,0 +1,27 @@
+#####################################     Module Project        #####################################
+---
+# g-prj-[XXX]          :
+#   name                      : "g-prj-[XXX]"
+#   random_project_id         : false
+#   activate_apis             :
+#     - "serviceusage.googleapis.com"
+#     - "logging.googleapis.com"
+#     - "pubsub.googleapis.com"
+#   enable_shared_vpc_host_project : false
+# g-prj-[XXX]         :
+#   name                      : "g-prj-[XXX]"
+#   random_project_id         : false
+#   activate_apis             :
+#     - "serviceusage.googleapis.com"
+#     - "bigquery.googleapis.com"
+#   enable_shared_vpc_host_project : false
+# g-prj-[XXX]       :
+#   name                      : "g-prj-[XXX]"
+#   random_project_id         : false
+#   activate_apis             :
+#     - "serviceusage.googleapis.com"
+#     - "compute.googleapis.com"
+#     - "dns.googleapis.com"
+#     - "container.googleapis.com"
+#   parent_id                 : "g-fldr-[XXX]"
+#   enable_shared_vpc_host_project : true

@@ -1,0 +1,50 @@
+---
+# ################################### Module LB4 Internal #################################
+# g-lb4-[XXX]               :
+#   project                           : "g-prj-[COMPANY]-[XXX]"
+#   region                            : "europe-west1"
+#   project_net                       : "g-prj-[COMPANY]-[XXX]"
+#   network                           : "g-vpc-[XXX]"
+#   subnetwork                        : "g-snet-[XXX]"
+#   allow_global_access               : true
+#   load_balancing_scheme             : "INTERNAL"
+#   ip_protocol                       : "TCP" 
+#   ports                             : []
+#   all_ports                         : true
+#   backend                           :
+#     name                            : "g-bks-[XXX]" 
+#     group                           : "g-umig-[XXX]"
+#     connection_draining_timeout_sec : 300
+#   health_check                      :
+#     name                            : "g-hc-[XXX]"
+#     type                            : "health_checks_tcp"
+#   specific_forwarding_rules         :
+#     - name                          : "g-lb4-[XXX]"
+#       address_name                  : "g-ip-[XXX]"
+#       description                   : "[XXX]"
+#       service_label                 : "lb"
+
+# g-lb4-[XXX]               :
+#   project                           : "g-prj-[COMPANY]-[XXX]"
+#   region                            : "europe-west1"
+#   project_net                       : "g-prj-[COMPANY]-[XXX]"
+#   network                           : "g-vpc-[XXX]"
+#   subnetwork                        : "g-snet-[XXX]"
+#   allow_global_access               : true
+#   load_balancing_scheme             : "INTERNAL"
+#   ip_protocol                       : "TCP" 
+#   ports                             : []
+#   all_ports                         : true
+#   backend                           :
+#     name                            : "g-bks-[XXX]" 
+#     group                           : "g-umig-[XXX]"
+#     connection_draining_timeout_sec : 300
+#   health_check                      :
+#     name                            : "g-hc-[XXX]"
+#     type                            : "health_checks_tcp"
+#   specific_forwarding_rules         :
+#     - name                          : "g-lb4-[XXX]"
+#       address_name                  : "g-ip-[XXX]"
+#       description                   : "[XXX]"
+#       service_label                 : "lb"
+

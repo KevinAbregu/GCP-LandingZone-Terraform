@@ -1,0 +1,9 @@
+---
+################################### Module VPC #################################
+g-vpc-[XXX]             :
+  project_vpc             : "g-prj-[COMPANY]-[XXX]"
+  network_name_vpc        : "g-vpc-[XXX]"
+  mtu                     : 1460
+  shared_vpc_host         : true
+  routing_mode            : "GLOBAL"
+  del_def_int             : false

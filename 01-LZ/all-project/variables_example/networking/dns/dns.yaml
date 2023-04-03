@@ -1,0 +1,29 @@
+---
+################################### Module DNS #################################
+# [DNS-NAME]                :
+#   project_id                          : "g-prj-[COMPANY]-[XXX]"
+#   type                                : "private"
+#   name                                : "[DNS-NAME] "
+#   domain                              : "hub-int.gcp.prueba.net."
+#   private_visibility_config_networks  :
+#     - "https://www.googleapis.com/compute/v1/projects/g-prj-[COMPANY]-[XXX]/global/networks/g-vpc-[XXX]"
+#     - "https://www.googleapis.com/compute/v1/projects/g-prj-[COMPANY]-[XXX]/global/networks/g-vpc-[XXX]"
+# [DNS-NAME]                :
+#   project_id                          : "g-prj-[COMPANY]-[XXX]"
+#   type                                : "private"
+#   name                                : "[DNS-NAME]"
+#   domain                              : "hub-ext.gcp.prueba.net."
+#   private_visibility_config_networks  :
+#     - "https://www.googleapis.com/compute/v1/projects/g-prj-[COMPANY]-[XXX]/global/networks/g-vpc-[XXX]t"
+#     - "https://www.googleapis.com/compute/v1/projects/g-prj-[COMPANY]-[XXX]/global/networks/g-vpc-[XXX]"
+#   recordsets                          :
+#     - name                            : "[XXX]"
+#       type                            : "A"
+#       ttl                             : 300
+#       records                         :
+#         - "[IP]"
+#     - name                            : "[XXX]"
+#       type                            : "A"
+#       ttl                             : 300
+#       records                         :
+#         - "[IP]"

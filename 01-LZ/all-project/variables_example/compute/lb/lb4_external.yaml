@@ -1,0 +1,15 @@
+---
+################################### Module LB4 External #################################
+# g-xlb4-[XXX]                :
+#   project                             : "g-prj-[COMPANY]-[XXX]"
+#   name                                : "g-xlb4-[XXX]"
+#   address_name                        : "ip-g-[XXX]"
+#   description                         : ""
+#   region                              : "europe-west1"
+#   all_ports                           : true
+#   backend                             :
+#     name                              : "g-bks-[XXX]"
+#     group                             : "g-umig-[XXX]"
+#   health_check                        :
+#     name                              : "g-hc-[XXX]"
+#     type                              : "health_checks_http"

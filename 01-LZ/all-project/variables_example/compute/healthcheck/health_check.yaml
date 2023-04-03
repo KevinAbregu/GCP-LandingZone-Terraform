@@ -1,0 +1,18 @@
+---
+################################### Module Health Check #################################
+# g-hc-[COMPANY]-net-[XXX]-port-[PORT-NUMBER]   :
+#   type                        : "tcp"
+#   global                      : false
+#   project                     : "g-prj-[COMPANY]-[XXX]"
+#   name                        : "g-hc-[COMPANY]-net-[XXX]-port-[PORT-NUMBER]"
+#   region                      : "europe-west1"
+#   port                        : "22"
+
+# g-hc-[COMPANY]-net-[XXX]-port-[PORT-NUMBER]   :
+#   type                        : "http"
+#   global                      : true
+#   project                     : "g-prj-[COMPANY]-[XXX]"
+#   name                        : "g-hc-[COMPANY]-net-[XXX]-port-[PORT-NUMBER]"
+#   region                      : "europe-west1"
+#   check_interval_sec          : 10
+#   port                        : "181"

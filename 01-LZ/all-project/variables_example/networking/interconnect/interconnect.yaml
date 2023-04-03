@@ -1,0 +1,12 @@
+---
+################################### Module Interconnect #################################
+# g-interconnect-[XXX]:
+#   name_router            : "g-cr-[XXX]"
+#   network                : "g-vpc-[XXX]"
+#   project                : "g-prj-[COMPANY]-[XXX]"
+#   region                 : "europe-west1"
+#   type                   : "PARTNER"
+#   vlan_1                 :
+#     name                 : "g-cint-[XXX]"
+#   vlan_2                 :
+#     name                 : "g-cint-[XXX]"

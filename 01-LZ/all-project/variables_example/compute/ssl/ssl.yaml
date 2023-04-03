@@ -1,0 +1,8 @@
+---
+# g-ssl-[XXX] :
+#   region           : "europe-west1"
+#   name             : "g-ssl-[XXX]"
+#   project          : "g-prj-[COMPANY]-[XXX]"
+#   paht_private_key : "./prueba.com.key"
+#   paht_certificate : "./prueba.com.key"
+  

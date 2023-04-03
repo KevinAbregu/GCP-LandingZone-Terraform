@@ -1,0 +1,3 @@
+variable "interconnect" {
+  type = any
+}

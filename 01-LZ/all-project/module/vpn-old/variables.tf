@@ -1,0 +1,3 @@
+variable "vpn" {
+  type =  any
+}

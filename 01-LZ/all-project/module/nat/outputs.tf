@@ -1,0 +1,1 @@
+output "nat" {value = module.cloud_nat}

@@ -1,0 +1,14 @@
+---
+################################### Module PEERING #################################
+# peering1                      :
+#   local_network_peering       : "g-vpc-[XXX]"
+#   peer_network_peering        : "g-vpc-[XXX]"
+#   export_local_custom_routes  : true
+# peering2                      :
+#   local_network_peering       : "g-vpc-[XXX]"
+#   peer_network_peering        : "g-vpc-[XXX]"
+#   export_local_custom_routes  : true
+# peering3                      :
+#   local_network_peering       : "g-vpc-[XXX]"
+#   peer_network_peering        : "g-vpc-[XXX]"
+#   export_local_custom_routes  : true

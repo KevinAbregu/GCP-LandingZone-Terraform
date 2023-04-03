@@ -1,0 +1,11 @@
+---
+# g-sa-[XXX]: 
+#   project : "g-prj-[COMPANY]-[XXX]"
+#   name: "g-sa-[XXX]"
+#   display_name: "g-sa-[XXX]"
+#   iam_additive: 
+#     roles/iam.serviceAccountTokenCreator:
+#       - user:[XXX]
+#   iam_project_roles:
+#     g-prj-[COMPANY]-[XXX]: 
+#       - roles/storage.objectViewer

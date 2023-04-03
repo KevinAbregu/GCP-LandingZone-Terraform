@@ -1,0 +1,34 @@
+---
+################################### Module LB7 #################################
+# g-xlb7-[XXX]         :
+#   project                               : "g-prj-[COMPANY]-[XXX]"
+#   region                                : "europe-west1"
+#   url_map_name                          : "g-xlb7-[XXX]" 
+#   health_check_name                     : "g-hc-[XXX]"
+#   address                               :
+#     address_name                        : "ip-g-[XXX]"
+#     global                              : true
+#   #### Front #######
+#     # type_protocol ("https" or "http")
+#   http                                 :
+#     proxy_name                          : "g-lb7-proxy-[XXX]"
+#     forwarding_rule_name                : "g-lb7-[XXX]"
+#     port_range                          : "80"
+#   project_network                       : "g-prj-[COMPANY]-[XXX]"
+#   host_rule                             :
+#     - host                              :
+#       - "prueba.com"
+#       name                              : "g-bks-[XXX]"
+#   balancing_mode                        : "RATE"
+#   max_rate                              : 30.0
+#   capacity_scaler                       : 1.0
+#   locality_lb_policy                    : "ROUND_ROBIN"
+#   default_backend                       : "g-bks-[XXX]"
+#   backends                               :
+#     - name                              : "g-bks-[XXX]"
+#       port_name                         : "http-443"
+#       umig                              : "g-umig-[XXX]"
+#       protocol                          : "HTTP"  
+#       health_check                      : "g-hc-[XXX]"
+#   ssl                                   : []
+
