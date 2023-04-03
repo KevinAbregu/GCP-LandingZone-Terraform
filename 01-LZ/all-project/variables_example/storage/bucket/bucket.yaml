@@ -8,7 +8,7 @@
 #   - role : "roles/storage.legacyBucketOwner"
 #     member : "serviceAccount:[XXX]"
   # - role   : "roles/storage.legacyObjectOwner"
-  #   member : "serviceAccount:g-sa-webfg-cs-cicd-lon@g-prj-webfg-cicd.iam.gserviceaccount.com"
+  #   member : "serviceAccount:g-sa-[COMPANY]-cs-cicd-lon@g-prj-[COMPANY]-cicd.iam.gserviceaccount.com"
   # bucket_life : 
   # - action : 
   #     storage_class : "NEARLINE"
